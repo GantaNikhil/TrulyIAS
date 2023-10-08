@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601853251654",
+    "project_id": "trulyias-80ad3",
+    "storage_bucket": "trulyias-80ad3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601853251654:android:5d0607f14301bbcb63fa47",
+        "android_client_info": {
+          "package_name": "com.example.truly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsrlv1OFGoo37r-zaewXm1MgpeOhOY4Mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
