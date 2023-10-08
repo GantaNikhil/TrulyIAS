@@ -18,13 +18,22 @@ import com.example.truly.ui.theme.TrulyTheme
 
 class MainActivity : ComponentActivity() {
     private lateinit var binding: ActivityMainBinding
+    private lateinit var videoPath : String
+    private lateinit var experiment : ExperimentsModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val videoPath = "android.resource://$packageName/${R.raw.video_1}"
+         experiment = intent.getSerializableExtra("experiment") as ExperimentsModel
+
+        videoPath = when (experiment.exp) {
+            1 -> "android.resource://$packageName/${R.raw.video_1}"
+            2 -> "android.resource://$packageName/${R.raw.video_2}"
+            3 -> "android.resource://$packageName/${R.raw.video_3}"
+            else -> "android.resource://$packageName/${R.raw.video_4}"
+        }
 
         val uri = Uri.parse(videoPath)
         binding.videoView.setVideoURI(uri)

@@ -36,7 +36,7 @@ class ChaptersAdapter : RecyclerView.Adapter<ChaptersAdapter.MyViewHolder>() {
         val experiment = data[position].experiments
 
         val experimentsAdapter = ExperimentsAdapter()
-        experimentsAdapter.setData(experiment)
+        experimentsAdapter.setData(context,experiment)
 
         holder.binding.revHor.setHasFixedSize(true)
         holder.binding.revHor.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false) // maybe get context from activity

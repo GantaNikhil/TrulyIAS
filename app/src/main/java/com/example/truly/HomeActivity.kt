@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.truly.databinding.ActivityHomeBinding
 import java.io.Serializable
 
-class HomeActivity : AppCompatActivity(), Serializable {
+class HomeActivity : AppCompatActivity(){
     private lateinit var binding : ActivityHomeBinding
     private lateinit var adapter : ChaptersAdapter
     private var data : ArrayList<ChaptersModel> = ArrayList()
@@ -26,9 +26,9 @@ class HomeActivity : AppCompatActivity(), Serializable {
         exp1.add(ExperimentsModel("Exp2",2))
         exp1.add(ExperimentsModel("Exp3",3))
 
-        data.add(ChaptersModel("ABC",exp))
-        data.add(ChaptersModel("DEF",exp1))
-        data.add(ChaptersModel("GHI",exp))
+        data.add(ChaptersModel("Chapter 1: Food Where does it come from?",exp))
+        data.add(ChaptersModel("Chapter 2: Components of food",exp1))
+        data.add(ChaptersModel("Chapter 3: Fibre to Fabric",exp))
 
         binding.revVer.layoutManager = LinearLayoutManager(this)
         binding.revVer.setHasFixedSize(true)

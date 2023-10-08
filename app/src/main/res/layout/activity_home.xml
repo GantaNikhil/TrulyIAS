@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Hi, Nikhil"
+            android:text="Hi, Nikhil"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="25sp"/>
@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Class: 6"
+            android:text="Class: 6"
             android:layout_marginEnd="20dp"
             android:layout_gravity="end"
             android:textStyle="bold"
