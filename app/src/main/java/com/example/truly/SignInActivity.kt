@@ -53,7 +53,7 @@ class SignInActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Toast.makeText(this@SignInActivity, "Successfully Signed In", Toast.LENGTH_LONG)
                         .show()
-                    val intent = Intent(this@SignInActivity, MainActivity::class.java)
+                    val intent = Intent(this@SignInActivity, HomeActivity::class.java)
                     startActivity(intent)
                     finish()
                 } else {

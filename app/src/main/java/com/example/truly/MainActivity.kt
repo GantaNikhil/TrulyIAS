@@ -18,14 +18,13 @@ import com.example.truly.ui.theme.TrulyTheme
 
 class MainActivity : ComponentActivity() {
     private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val videoPath = "android.resource://$packageName/${R.raw.video_song}"
+        val videoPath = "android.resource://$packageName/${R.raw.video_1}"
 
         val uri = Uri.parse(videoPath)
         binding.videoView.setVideoURI(uri)
