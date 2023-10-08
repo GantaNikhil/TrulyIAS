@@ -1,4 +1,4 @@
-package com.example.trulyias.ui.theme
+package com.example.truly.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

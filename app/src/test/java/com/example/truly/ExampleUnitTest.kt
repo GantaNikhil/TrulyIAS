@@ -1,4 +1,4 @@
-package com.example.trulyias
+package com.example.truly
 
 import org.junit.Test
 

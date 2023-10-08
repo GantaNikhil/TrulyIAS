@@ -1,9 +1,8 @@
-package com.example.trulyias
+package com.example.truly
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
-import com.example.trulyias.databinding.ActivityPdfviewerBinding
+import com.example.truly.databinding.ActivityPdfviewerBinding
 
 class PdfViewerActivity : ComponentActivity() {
     private lateinit var binding: ActivityPdfviewerBinding

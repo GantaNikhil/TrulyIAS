@@ -1,17 +1,20 @@
-package com.example.trulyias
+package com.example.truly
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.MediaController
-import android.widget.VideoView
 import androidx.activity.ComponentActivity
-import androidx.activity.result.ActivityResultRegistry
-import androidx.activity.result.contract.ActivityResultContracts
-import com.example.trulyias.databinding.ActivityMainBinding
-import java.lang.Exception
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.truly.databinding.ActivityMainBinding
+import com.example.truly.ui.theme.TrulyTheme
 
 class MainActivity : ComponentActivity() {
     private lateinit var binding: ActivityMainBinding
